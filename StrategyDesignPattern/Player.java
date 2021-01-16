@@ -28,7 +28,7 @@ public abstract class Player {
             if (this.defenceBehavior == null) {
                 return "not playing";
             } else {
-                return "not playing";
+                return this.defenceBehavior.play();
             }
         } else if (this.offenceBehavior == null) {
             return "not playing";
