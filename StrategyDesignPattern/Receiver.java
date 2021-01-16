@@ -6,18 +6,21 @@
 package StrategyDesignPattern;
 
 public class Receiver extends Player {
-    
-    public Receiver(String name){
+
+    public Receiver(String name) {
         super(name);
         this.setOffenceBehavior();
         this.setDefenceBehavior();
     }
 
-    public void setOffenceBehavior(){
+    /*
+     * These methods set the offense and defense behavior for the player.
+     */
+    public void setOffenceBehavior() {
         this.offenceBehavior = new ReceiverBehavior();
     }
 
-    public void setDefenceBehavior(){
+    public void setDefenceBehavior() {
         this.defenceBehavior = null;
     }
 

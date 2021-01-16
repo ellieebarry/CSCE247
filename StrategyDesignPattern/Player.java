@@ -12,28 +12,32 @@ public abstract class Player {
     protected DefenceBehavior defenceBehavior;
     protected OffenceBehavior offenceBehavior;
 
-    // constructor
     public Player(String name) {
         this.name = name;
     }
+
     public abstract void setDefenceBehavior();
+
     public abstract void setOffenceBehavior();
 
-    public String play(){
-        if(defense){
-            if(this.defenceBehavior == null){
+    /*
+     * Method that determines if the player is playing
+     */
+    public String play() {
+        if (defense) {
+            if (this.defenceBehavior == null) {
                 return "not playing";
             } else {
                 return "not playing";
             }
-        } else if(this.offenceBehavior == null){
+        } else if (this.offenceBehavior == null) {
             return "not playing";
         } else {
             return this.offenceBehavior.play();
         }
     }
 
-    public void turnover(){
+    public void turnover() {
         this.defense = !defense;
     }
 }
