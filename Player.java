@@ -9,8 +9,8 @@ public abstract class Player {
     public Player(String name) {
         this.name = name;
     }
-    public void setDefenceBehavior();
-    public void setOffenceBehavior();
+    public abstract void setDefenceBehavior();
+    public abstract void setOffenceBehavior();
     public String play();
     public void turnover();
 }

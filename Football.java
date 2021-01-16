@@ -4,7 +4,7 @@ public class Football {
 	
 	public void play() {
 		Player[] players = new Player[3];
-		players[0] = new QuarterBack("Russel Wilson");
+		players[0] = new QuarterBack("Russel Wilson", name);
 		players[1] = new Receiver("Tyler Lockett");
 		players[2] = new Lineman("BJ Finney");
 		
