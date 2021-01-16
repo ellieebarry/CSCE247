@@ -1,3 +1,10 @@
+/*
+* Author: Eleanor Barry
+* Date: 1/16/2021
+* Creates a quarterback which is a type of player and sets its plays and name.
+*/
+package StrategyDesignPattern;
+
 import java.util.Random;
 public class QuarterBack extends Player{
     

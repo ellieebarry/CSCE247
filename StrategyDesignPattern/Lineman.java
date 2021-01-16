@@ -1,4 +1,12 @@
+/*
+* Author: Eleanor Barry
+* Date: 1/16/2021
+* Creates a lineman which is a type of player and sets its plays and name.
+*/
+package StrategyDesignPattern;
+
 import java.util.Random;
+
 public class Lineman extends Player{
     
     public Lineman(String name){
