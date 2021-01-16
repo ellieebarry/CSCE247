@@ -17,7 +17,7 @@ public class QuarterBack extends Player{
         }
     }
 
-    public void settDefenceBehavior(){
+    public void setDefenceBehavior(){
         this.defenceBehavior = null;
     }
 
