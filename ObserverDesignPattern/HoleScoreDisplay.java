@@ -14,6 +14,9 @@ public class HoleScoreDisplay implements Observer{
     }
 
     private void displayCurrentScore(){
+        System.out.println("Current Hole Stats:");
+        System.out.println("Par: " + par);
+        System.out.println("Strokes: " + strokes);
         if(strokes < par){
            System.out.println((par - strokes) + " under par");
         } else if(strokes == par){
