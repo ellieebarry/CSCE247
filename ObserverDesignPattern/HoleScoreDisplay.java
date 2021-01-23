@@ -10,10 +10,17 @@ public class HoleScoreDisplay implements Observer{
     public void update(int strokes, int par){
         this.strokes = strokes;
         this.par = par;
+        displayCurrentScore();
     }
 
     private void displayCurrentScore(){
-        
+        if(strokes < par){
+           System.out.println((par - strokes) + " under par");
+        } else if(strokes == par){
+            System.out.println("Made par");
+        } else {
+            System.out.println((strokes - par) + " over par");
+        }
     }
 
 }
