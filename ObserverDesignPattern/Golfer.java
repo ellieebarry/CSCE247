@@ -2,10 +2,10 @@ package ObserverDesignPattern;
 
 public class Golfer {
     
-    public void registerObserver(Obeserver observer){
+    public void registerObserver(Observer observer){
 
     }
-    
+
 
 
 
