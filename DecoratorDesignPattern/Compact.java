@@ -1,11 +1,24 @@
 package DecoratorDesignPattern;
 
-public class Compact extends Vehicle{
-    public Compact(){
+/**
+ * Class that creates a compact vehicle
+ * @author Eleanor Barry
+ */
+
+public class Compact extends Vehicle {
+
+    /**
+     * Constructor method
+     */
+    public Compact() {
         this.description = "Compact";
     }
 
-    public double getCost(){
+    /**
+     * Returns car price
+     * @return a double that is the cost of the vehicle
+     */
+    public double getCost() {
         return 15000.0;
     }
 }
