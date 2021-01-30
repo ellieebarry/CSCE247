@@ -1,6 +1,6 @@
 package DecoratorDesignPattern;
 
-public class Rims {
+public class Rims extends VehicleDecorator{
     Vehicle vehicle;
 
     public Rims(Vehicle vehicle){
@@ -8,7 +8,7 @@ public class Rims {
     }
 
     public String toString(){
-        return vehicle.getDescription() + ", cool rims";
+        return vehicle.toString() + ", cool rims";
     }
 
     public double getCost(){

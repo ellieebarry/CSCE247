@@ -1,6 +1,6 @@
 package DecoratorDesignPattern;
 
-public class SoundSystem {
+public class SoundSystem extends VehicleDecorator{
     
     Vehicle vehicle;
 
@@ -9,7 +9,7 @@ public class SoundSystem {
     }
 
     public String toString(){
-        return vehicle.getDescription() + ", awesome sound";
+        return vehicle.toString() + ", awesome sound";
     }
 
     public double getCost(){

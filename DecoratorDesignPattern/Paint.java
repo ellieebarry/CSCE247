@@ -8,7 +8,7 @@ public class Paint extends VehicleDecorator{
     }
 
     public String toString(){
-        return vehicle.getDescription() + ", fancy paint";
+        return vehicle.toString() + ", fancy paint";
     }
 
     public double getCost(){
