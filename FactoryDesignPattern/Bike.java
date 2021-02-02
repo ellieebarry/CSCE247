@@ -27,11 +27,14 @@ public abstract class Bike {
     }
 
     public void addPedals(){
-        
+        if(hasPedals){
+            return;
+        }
+        System.out.println("Adding pedals");
     }
 
     public void getPrice(){
-
+        System.out.println(price);
     }
 
 
