@@ -37,6 +37,10 @@ public abstract class Bike {
             return;
         }
         System.out.println("Adding " + numWheels + " wheels(s)");
+        if (!hasTrainingWheels) {
+            return;
+        }
+        System.out.println("Adding training wheels");
     }
 
     /**
