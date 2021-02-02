@@ -1,41 +1,59 @@
 package FactoryDesignPattern;
 
+/**
+ * Class that creates a Bike and creates the variables for it
+ * @author Eleanor Barry
+ */
+
 public abstract class Bike {
-    
+
     protected String name;
     protected Double price;
     protected int numWheels;
     protected boolean hasPedals;
     protected boolean hasTrainingWheels;
 
-    public void createBike(){
+    /**
+     * Method to call others methods to create the bike
+     */
+    public void createBike() {
         createFrame();
         addWheels();
         addPedals();
     }
 
-    public void createFrame(){
+    /**
+     * Method that prints that the bike frame is being assembled
+     */
+    private void createFrame() {
         System.out.println("Assembling " + name + " frame");
     }
 
-
-    public void addWheels(){
-        if(numWheels == 0){
+    /**
+     * Method that adds wheels to the bike if the type of bike has them
+     */
+    private void addWheels() {
+        if (numWheels == 0) {
             return;
         }
-        System.out.println("Adding " + numWheels + "wheels(s)");
+        System.out.println("Adding " + numWheels + " wheels(s)");
     }
 
-    public void addPedals(){
-        if(hasPedals){
+    /**
+     * Method that adds pedals to the bike if the type of bike has them
+     */
+    private void addPedals() {
+        if (!hasPedals) {
             return;
         }
         System.out.println("Adding pedals");
     }
 
-    public void getPrice(){
-        System.out.println(price);
+    /**
+     * Method that returns the price of the bike
+     */
+    public void getPrice() {
+        System.out.println("Price: $" + price);
     }
-
 
 }
