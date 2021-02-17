@@ -56,8 +56,7 @@ public class Library {
     /**
      * Method to add a copy of a book to the library.
      * @param bookName String that is the value of the book
-     * @param numToAdd Integer that is the key to add to the original key of the
-     *                 value.
+     * @param numToAdd Integer that is the key to add to the original key of the value.
      */
     public void checkInBook(String bookName, int numToAdd) {
         if (books.containsKey(bookName)) {
