@@ -4,7 +4,7 @@
  */
 
 public interface State {
-    public void pressHomebutton();
+    public void pressHomeButton();
     public void pressNetflixButton();
     public void pressHuluButton();
     public void pressMovieButton();

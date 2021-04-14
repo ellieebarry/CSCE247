@@ -3,16 +3,17 @@ public class TV {
     private State HomeState;
     private State NetflixState;
     private State HuluState;
-    private State state;
+    private State state = HomeState;
 
     public TV(){
-        HomeState = new State();
-        NetflixState = new State();
-        HuluState = new State();
-        state = new State();
+        HomeState = new HomeState();
+        NetflixState = new NetflixState();
+        HuluState = new HuluState();
     }
 
-    public void PressHomeButton() {
+
+
+    public void pressHomeButton() {
         state.pressHomeButton();
     }
 
@@ -29,7 +30,7 @@ public class TV {
     }
 
     public void pressTVButton(){
-        state.pressTVBUtton();
+        state.pressTVButton();
     }
 
     public void setState(State state) { 

@@ -1,18 +1,21 @@
 
 
 public class HomeState implements State{
+    
+    private TV TV = new TV();
+
     public void pressHomeButton() {
         System.out.println("TV is already on the home screen");
     }
 
     public void pressNetflixButton() {
         System.out.println("Loading Netflix...");
-        TV.setState(new NetflixState());
+        TV.setState(TV.getNetflixState());
     }
 
     public void pressHuluButton() {
         System.out.println("Loading Hulu...");
-        TV.setState(new HuluState());
+        TV.setState(TV.getHuluState());
     }
 
     public void pressMovieButton() {

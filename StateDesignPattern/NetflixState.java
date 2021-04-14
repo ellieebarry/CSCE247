@@ -1,8 +1,10 @@
 public class NetflixState implements State{
     
+    private TV TV = new TV();
+
     public void pressHomeButton() {
         System.out.println("Loading the Home Screen...");
-        TV.setState(new HomeState());
+        TV.setState(TV.getHomeState());
     }
 
     public void pressNetflixButton() {
@@ -11,7 +13,7 @@ public class NetflixState implements State{
 
     public void pressHuluButton() {
         System.out.println("Loading Hulu...");
-        TV.setState(new HuluState());
+        TV.setState(TV.getHuluState());
     }
 
     public void pressMovieButton() {
