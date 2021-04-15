@@ -6,9 +6,10 @@ public class TV {
     private State state = HomeState;
 
     public TV(){
-        HomeState = new HomeState();
-        NetflixState = new NetflixState();
-        HuluState = new HuluState();
+        HomeState = new HomeState(this);
+        NetflixState = new NetflixState(this);
+        HuluState = new HuluState(this);
+        state = HomeState;
     }
 
 
