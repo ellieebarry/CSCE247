@@ -14,7 +14,7 @@ public class CD implements DigitalAlbum {
         songs.add(song4);
         songs.add(song5);
 
-        currentIndex = 0;
+        currentIndex = -1;
     }
 
     public String playFromBeginning() {
@@ -25,7 +25,7 @@ public class CD implements DigitalAlbum {
     public String playSong(int num) {
         if(songs.get(num) != null) {
             currentIndex = num + 1;
-            return "Playing song " + num + ": " + songs.get(num);
+            return "Playing song " + currentIndex + ": " + songs.get(currentIndex-1);
         } else {
             return "Not a valid song number";
         }
@@ -44,7 +44,7 @@ public class CD implements DigitalAlbum {
         } else {
             currentIndex++;
         }
-        return "Playing: " + songs.get(currentIndex);
+        return "Playing: " + (currentIndex+1) + ": " + songs.get(currentIndex);
     }
 
     public String stop() {

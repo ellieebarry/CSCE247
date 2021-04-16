@@ -18,7 +18,8 @@ public class Cassett implements AnalogAlbum{
     }
 
     public String play() {
-        return "Playing song " + (currentIndex+1) + ": " + songs.get(currentIndex);
+        currentIndex++;
+        return "Playing song " + (currentIndex) + ": " + songs.get(currentIndex-1);
     }
 
     public String rewind() {
@@ -26,7 +27,7 @@ public class Cassett implements AnalogAlbum{
             return "Fully Re-Wound";
         } else {
             currentIndex--;
-            return "rewinding to song" + (currentIndex+1);
+            return "rewinding to song " + (currentIndex+1);
         }
     }
 
