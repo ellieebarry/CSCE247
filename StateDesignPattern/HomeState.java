@@ -1,3 +1,5 @@
+package StateDesignPattern;
+
 /**
  * Class that creates the HomeState from State
  * @author Eleanor Barry

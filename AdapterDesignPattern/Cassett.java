@@ -1,3 +1,4 @@
+package AdapterDesignPattern;
 import java.util.*;
 
 public class Cassett implements AnalogAlbum{
@@ -17,23 +18,36 @@ public class Cassett implements AnalogAlbum{
     }
 
     public String play() {
-
+        return "Playing song " + (currentIndex+1) + ": " + songs.get(currentIndex);
     }
 
     public String rewind() {
-
+        if(currentIndex == 0) {
+            return "Fully Re-Wound";
+        } else {
+            currentIndex--;
+            return "rewinding to song" + (currentIndex+1);
+        }
     }
 
     public String ffwd() {
-
+        if(currentIndex == 4) {
+            return "At the end of the cassett you need to rewind";
+        } else if(currentIndex == 3){
+            currentIndex++;
+            return "Forwarded to the end of the cassett";
+        } else {
+            currentIndex++;
+            return "Forwarding to song " + (currentIndex+1);
+        }
     }
 
     public String pause() {
-
+        return "Pausing...";
     }
 
     public String stopEject() {
-
+        return "Stopping cassett and ejecting";
     }
 
 }

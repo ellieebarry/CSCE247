@@ -1,3 +1,4 @@
+package AdapterDesignPattern;
 import java.util.*;
 
 public class CD implements DigitalAlbum {
@@ -22,7 +23,7 @@ public class CD implements DigitalAlbum {
     }
 
     public String playSong(int num) {
-        if(songs.get(num) != NULL) {
+        if(songs.get(num) != null) {
             currentIndex = num + 1;
             return "Playing song " + num + ": " + songs.get(num);
         } else {
@@ -41,9 +42,9 @@ public class CD implements DigitalAlbum {
         if(currentIndex == 4) {
             currentIndex = 0;
         } else {
-            currentInedx++;
+            currentIndex++;
         }
-        return "Playing: " + songs.get(CurrentIndex);
+        return "Playing: " + songs.get(currentIndex);
     }
 
     public String stop() {

@@ -1,3 +1,5 @@
+package AdapterDesignPattern;
+
 public interface AnalogAlbum {
     
     public String play();

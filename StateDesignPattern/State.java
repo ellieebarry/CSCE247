@@ -1,3 +1,4 @@
+package StateDesignPattern;
 /**
  * Interface to set a state for the TV
  * @author Eleanor Barry

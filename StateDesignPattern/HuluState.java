@@ -1,3 +1,4 @@
+package StateDesignPattern;
 /**
  * Class that creates the HuluState from State
  * @author Eleanor Barry

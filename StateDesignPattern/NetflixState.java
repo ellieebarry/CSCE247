@@ -1,3 +1,4 @@
+package StateDesignPattern;
 /**
  * Class that creates the NetflixState from State
  * @author Eleanor Barry

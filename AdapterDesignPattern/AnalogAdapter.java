@@ -1,3 +1,5 @@
+package AdapterDesignPattern;
+
 public class AnalogAdapter implements AnalogAlbum{
     
     private DigitalAlbum album;
@@ -7,23 +9,23 @@ public class AnalogAdapter implements AnalogAlbum{
     }
 
     public String play() {
-
+        return album.nextSong();
     }
 
     public String rewind() {
-
+        return album.prevSong();
     }
 
     public String ffwd() {
-
+        return album.nextSong();
     }
 
     public String pause() {
-
+        return album.pause();
     }
 
     public String stopEject() {
-
+        return album.stop();
     }
 
 }

@@ -1,4 +1,4 @@
-
+package AdapterDesignPattern;
 
 public interface DigitalAlbum {
     
